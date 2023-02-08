@@ -1,0 +1,140 @@
+/* header */
+
+.btn-icon-header {
+  display: block;
+}
+.navigation-header {
+  position: absolute;
+  flex-direction: column;
+  top: 0;
+  background-color: #262626;
+  height: 100%;
+  width: 35vw;
+  padding: 1em;
+  animation-duration: 1s;
+  margin-left: -100vw;
+}
+.header {
+  position: static;
+}
+.logo-header {
+  display: none;
+}
+.profile-icon {
+  display: none;
+}
+
+hr {
+  width: 80%;
+}
+
+/* home */
+
+.greetings {
+  font-size: 1.7em;
+}
+
+/* sobre mim */
+
+#sobre {
+  padding-bottom: 90px;
+  margin: auto;
+  padding-top: 20px;
+  background-color: #262626;
+}
+
+.sobre-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+  font-size: 1.1em;
+  text-align: justify;
+}
+
+#sobre img {
+  width: 220px;
+  background-color: #000000;
+  margin: auto;
+  margin-bottom: 50px;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.3);
+}
+
+.sobre-container p {
+  width: 300px;
+  text-align: left;
+}
+
+/* Projetos */
+
+#projetos {
+  margin: auto;
+  padding-bottom: 90px;
+  background-color: #202020;
+}
+.projetos-container {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 0.7fr));
+  justify-content: center;
+  flex-direction: column;
+  grid-gap: 20px;
+  padding: 20px;
+  margin-top: -100px;
+}
+
+.projetos-container .b1 {
+  height: 740px;
+}
+.projetos-container .b2 {
+  height: 530px;
+}
+.projetos-container .b3 {
+  height: 530px;
+}
+.projetos-container .b4 {
+  height: 750px;
+}
+.projetos-container .box button {
+  margin-top: 10px;
+}
+
+/* Skilss */
+
+#skills {
+  padding-bottom: 90px;
+  margin: auto;
+  background-color: #262626;
+}
+
+.skills-container {
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+  font-size: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-gap: 30px;
+  padding: 20px;
+}
+
+.skills-container .card {
+  position: relative;
+  height: 400px;
+  padding: 20px;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  background-color: #202020;
+  border-radius: 10px;
+}
+
+/* footer */
+
+#footer h3 {
+  display: flex;
+  flex-direction: column;
+  color: #818181;
+}
