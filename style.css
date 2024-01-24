@@ -144,7 +144,7 @@ body {
 .sobre-btn:hover::before {
   transform: translateX(300px) skew(-20deg);
 }
-.sobre-btn:hover: {
+.sobre-btn:hover{
   background: #00f7ff;
 }
 
@@ -290,6 +290,12 @@ hr {
   margin-top: 81px;
 }
 .projetos-container .b4 button {
+  margin-top: 15px;
+}
+.projetos-container .b5 button {
+  margin-top: 120px;
+}
+.projetos-container .b6 button {
   margin-top: 15px;
 }
 

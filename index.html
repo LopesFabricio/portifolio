@@ -1,332 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
 
-    <link
-      rel="stylesheet"
-      media="screen and (max-width: 768px)"
-      href="./mobile.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
 
-    <title>Portifólio | Fabricio Lopes</title>
-  </head>
-  <body>
-    <!-- Header -->
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="./mobile.css" />
 
-    <div class="header" id="header">
+  <title>Portifólio | Fabricio Lopes</title>
+</head>
+
+<body>
+  <!-- Header -->
+
+  <div class="header" id="header">
+    <button onclick="toggleSidebar()" class="btn-icon-header">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+      </svg>
+    </button>
+    <div class="logo-header">
+      <div class="f">F.</div>
+      <div class="sobrenome">Lopes</div>
+    </div>
+    <div class="navigation-header" id="navigation-header">
       <button onclick="toggleSidebar()" class="btn-icon-header">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          fill="currentColor"
-          class="bi bi-list"
-          viewBox="0 0 16 16"
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x"
+          viewBox="0 0 16 16">
           <path
-            fill-rule="evenodd"
-            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-          />
+            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
         </svg>
       </button>
-      <div class="logo-header">
-        <div class="f">F.</div>
-        <div class="sobrenome">Lopes</div>
-      </div>
-      <div class="navigation-header" id="navigation-header">
-        <button onclick="toggleSidebar()" class="btn-icon-header">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            fill="currentColor"
-            class="bi bi-x"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
-            />
-          </svg>
+      <a href="#home">Home</a>
+      <a href="#sobre">Sobre mim</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#footer">Contato</a>
+    </div>
+  </div>
+
+  <!-- Home -->
+
+  <div id="home">
+    <div class="home-container">
+      <div class="greetings">
+        <p>Oi, eu sou</p>
+        <h2 class="greetings-name">Fabricio Lopes</h2>
+        <p>Desenvolvedor Front-end.</p>
+        <button class="sobre-btn">
+          <a href="#sobre">
+            <span>Sobre mim</span>
+          </a>
         </button>
-        <a href="#home">Home</a>
-        <a href="#sobre">Sobre mim</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#footer">Contato</a>
       </div>
     </div>
+    <div>
+      <img class="profile-icon" src="./img/coding.png" alt="" />
+    </div>
+  </div>
 
-    <!-- Home -->
+  <!-- Sobre Mim -->
 
-    <div id="home">
-      <div class="home-container">
-        <div class="greetings">
-          <p>Oi, eu sou</p>
-          <h2 class="greetings-name">Fabricio Lopes</h2>
-          <p>Desenvolvedor Front-end.</p>
-          <button class="sobre-btn">
-            <a href="#sobre">
-              <span>Sobre mim</span>
-            </a>
-          </button>
+  <div id="sobre">
+    <h1>SOBRE MIM</h1>
+    <hr />
+    <div class="sobre-container">
+      <img src="./img/WhatsApp Image 2023-01-26 at 12.06.57.jpeg" alt="" />
+      <p>
+        Olá, me chamo Fabrício e tenho 21 anos. Sou natural do Maranhão porém
+        até os meus 19 anos cresci e estudei em Guarulhos-SP. Aos 19 anos
+        (2020) me mudei para o interior do Maranhão, para uma outra realidade
+        e em uma cidade que comporta por volta de 14 mil habitantes. Conheci a
+        programação justamente pelo mercado de trabalho da minha cidade não
+        ser muito favorável. Comecei pesquisar formas de trabalhar pela
+        internet, quando encontrei o mundo da programação foi amor a primeira
+        vista. Comecei meus estudos na programação em 2022. Gosto de trabalhar
+        em equipe, tenho vontade de aprender e sempre tento me superar a cada
+        novo passo. Acredito que com foco, determinação e esforço tudo é
+        possivel. Vamos trabalhar juntos?
+      </p>
+    </div>
+  </div>
+  <!-- Projetos-->
+
+  <div id="projetos">
+    <h1>Projetos</h1>
+    <hr />
+    <div class="projetos-container">
+      <div class="box b1">
+        <div class="img-box">
+          <img src="./img/WhatsApp Image 2023-01-24 at 19.31.35.jpeg" alt="" />
         </div>
+        <h2>Previsão do Tempo</h2>
+        <p>
+          As tecnologias base do projeto são: HTML, CSS e JavaScript. neste
+          projeto há uma requisição de API consumindo dados para trazer as
+          condições climáticas de qualquer cidade do mundo. Este projeto foi
+          um ótimo exercício para eu me familiarizar com configuração de APIs
+          de terceiros com base em uma API key, algo que é muito comum na
+          indústria de software.
+        </p>
+        <a href="https://funny-bombolone-809a75.netlify.app">
+          <button>Ver projeto completo</button>
+        </a>
       </div>
-      <div>
-        <img class="profile-icon" src="./img/coding.png" alt="" />
+      <div class="box b2">
+        <div class="img-box">
+          <img src="./img/WhatsApp Image 2023-01-29 at 16.14.32.jpeg" alt="" />
+        </div>
+        <h2>Calculadora IMC</h2>
+        <p>
+          Projeto desenvolvido em React + Typescript onde é possivel calcular
+          o IMC de uma pessoa com base na sua altura e peso, e assim indicar
+          sua situação corporal. Projeto realizado durante o curso B7web.
+        </p>
+        <a href="https://lopesfabricio.github.io/react-calc-imc/">
+          <button>Ver projeto completo</button>
+        </a>
+      </div>
+      <div class="box b3">
+        <div class="img-box">
+          <img src="./img/WhatsApp Image 2023-01-29 at 16.10.23 (2).jpeg" alt="" />
+        </div>
+        <h2>Jogo da Velha</h2>
+        <p>
+          Projeto desenvolvido em JavaScript onde foi montado um jogo da
+          Velha. Este projeto teve como principal objetivo estimular a logica
+          de programação. Projeto realizado durante o curso B7web.
+        </p>
+        <a href="https://glowing-pithivier-56bec7.netlify.app">
+          <button>Ver projeto completo</button>
+        </a>
+      </div>
+      <div class="box b4">
+        <div class="img-box">
+          <img src="./img/WhatsApp Image 2023-01-29 at 16.10.23 (1).jpeg" alt="" />
+        </div>
+        <h2>Validador de Formulários</h2>
+        <p>
+          Sabemos que formulários são essenciais em qualquer aplicação web,
+          mas seus dados só serão úteis se estiverem corretos e completos.
+          Pensando nisso, este projeto foi desenvolvido para que o usuário
+          seja capaz de adicionar validações ao formulário, garantindo que os
+          dados informados estejam corretos e completos.
+        </p>
+        <a href="https://cerulean-empanada-254b4e.netlify.app">
+          <button>Ver projeto completo</button>
+        </a>
+      </div>
+      <div class="box b5">
+        <div class="img-box">
+          <img src="./img/Captura de Tela (134).png" alt="" />
+        </div>
+        <h2>Organograma</h2>
+        <p>
+          Projeto desenvolvido em React + JavaScript, permitindo a gestão de colaboradores em uma equipe de
+          desenvolvimento, organizando-os por áreas de trabalho
+        </p>
+        <a href="https://projeto-organo-nu.vercel.app/">
+          <button>Ver projeto completo</button>
+        </a>
+      </div>
+      <div class="box b6">
+        <div class="img-box">
+          <img src="./img/Captura de Tela (133).png" alt="" />
+        </div>
+        <h2>Alura Studies</h2>
+        <p>
+          Projeto desenvolvido em React + TypeScript. Nesta iniciativa, foi criada uma aplicação chamada 'Alura
+          Studies', que permite a adição de tarefas a serem estudadas, juntamente com o tempo dedicado a cada uma. As
+          tarefas são representadas como cards, e ao selecioná-las, um cronômetro é ativado, exibindo o tempo dedicado à
+          tarefa.
+        </p>
+        <a href=" https://alura-studies-drab-two.vercel.app/ ">
+          <button>Ver projeto completo</button>
+        </a>
       </div>
     </div>
+  </div>
 
-    <!-- Sobre Mim -->
-
-    <div id="sobre">
-      <h1>SOBRE MIM</h1>
-      <hr />
-      <div class="sobre-container">
-        <img src="./img/WhatsApp Image 2023-01-26 at 12.06.57.jpeg" alt="" />
+  <!-- Skills -->
+  <div id="skills">
+    <h1>Minhas Skills</h1>
+    <hr />
+    <div class="skills-container">
+      <div class="card">
+        <div class="card-img">
+          <img src="./img/js.png" alt="" />
+        </div>
+        <h2>JavaScript</h2>
         <p>
-          Olá, me chamo Fabrício e tenho 21 anos. Sou natural do Maranhão porém
-          até os meus 19 anos cresci e estudei em Guarulhos-SP. Aos 19 anos
-          (2020) me mudei para o interior do Maranhão, para uma outra realidade
-          e em uma cidade que comporta por volta de 14 mil habitantes. Conheci a
-          programação justamente pelo mercado de trabalho da minha cidade não
-          ser muito favorável. Comecei pesquisar formas de trabalhar pela
-          internet, quando encontrei o mundo da programação foi amor a primeira
-          vista. Comecei meus estudos na programação em 2022. Gosto de trabalhar
-          em equipe, tenho vontade de aprender e sempre tento me superar a cada
-          novo passo. Acredito que com foco, determinação e esforço tudo é
-          possivel. Vamos trabalhar juntos?
+          JavaScript é uma linguagem de programação de alto nível criada, a
+          princípio, para ser executada em navegadores e manipular
+          comportamentos de páginas web.
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-img"><img src="./img/typescript.png" alt="" /></div>
+        <h2>TypeScript</h2>
+        <p>
+          TypeScript é um superconjunto de JavaScript, ou seja, um conjunto de
+          ferramentas e formas mais eficientes de escrever código JavaScript,
+          adicionando recursos que não estão presentes de maneira nativa na
+          linguagem.
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="./img/html-5.png" alt="" />
+        </div>
+        <h2>HTML 5</h2>
+        <p>
+          HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção
+          mais básico da web. Define o significado e a estrutura do conteúdo
+          da web.
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="./img/css-3 (1).png" alt="" />
+        </div>
+        <h2>CSS 3</h2>
+        <p>
+          CSS é chamado de linguagem Cascading Style Sheet e é usado para
+          estilizar elementos escritos em uma linguagem de marcação como HTML.
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="./img/atom (1).png" alt="" />
+        </div>
+        <h2>React</h2>
+        <p>
+          O React é a biblioteca mais popular do JavaScript e é usada para
+          construir uma interface de usuário (IU). Ela oferece uma resposta
+          excelente para o usuário adicionar comandos usando um novo método de
+          renderizar sites.
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="./img/bootstrap.png" alt="" />
+        </div>
+        <h2>Bootstrap</h2>
+        <p>
+          Bootstrap é um framework front-end que fornece estruturas de CSS
+          para a criação de sites e aplicações responsivas de forma rápida e
+          simples. Além disso, pode lidar com sites de desktop e páginas de
+          dispositivos móveis da mesma forma.
         </p>
       </div>
     </div>
-    <!-- Projetos-->
+  </div>
 
-    <div id="projetos">
-      <h1>Projetos</h1>
-      <hr />
-      <div class="projetos-container">
-        <div class="box b1">
-          <div class="img-box">
-            <img
-              src="./img/WhatsApp Image 2023-01-24 at 19.31.35.jpeg"
-              alt=""
-            />
-          </div>
-          <h2>Previsão do Tempo</h2>
-          <p>
-            As tecnologias base do projeto são: HTML, CSS e JavaScript. neste
-            projeto há uma requisição de API consumindo dados para trazer as
-            condições climáticas de qualquer cidade do mundo. Este projeto foi
-            um ótimo exercício para eu me familiarizar com configuração de APIs
-            de terceiros com base em uma API key, algo que é muito comum na
-            indústria de software.
-          </p>
-          <a href="https://funny-bombolone-809a75.netlify.app">
-            <button>Ver projeto completo</button>
-          </a>
-        </div>
-        <div class="box b2">
-          <div class="img-box">
-            <img
-              src="./img/WhatsApp Image 2023-01-29 at 16.14.32.jpeg"
-              alt=""
-            />
-          </div>
-          <h2>Calculadora IMC</h2>
-          <p>
-            Projeto desenvolvido em React + Typescript onde é possivel calcular
-            o IMC de uma pessoa com base na sua altura e peso, e assim indicar
-            sua situação corporal. Projeto realizado durante o curso B7web.
-          </p>
-          <a href="https://lopesfabricio.github.io/react-calc-imc/">
-            <button>Ver projeto completo</button>
-          </a>
-        </div>
-        <div class="box b3">
-          <div class="img-box">
-            <img
-              src="./img/WhatsApp Image 2023-01-29 at 16.10.23 (2).jpeg"
-              alt=""
-            />
-          </div>
-          <h2>Jogo da Velha</h2>
-          <p>
-            Projeto desenvolvido em JavaScript onde foi montado um jogo da
-            Velha. Este projeto teve como principal objetivo estimular a logica
-            de programação. Projeto realizado durante o curso B7web.
-          </p>
-          <a href="https://glowing-pithivier-56bec7.netlify.app">
-            <button>Ver projeto completo</button>
-          </a>
-        </div>
-        <div class="box b4">
-          <div class="img-box">
-            <img
-              src="./img/WhatsApp Image 2023-01-29 at 16.10.23 (1).jpeg"
-              alt=""
-            />
-          </div>
-          <h2>Validador de Formulários</h2>
-          <p>
-            Sabemos que formulários são essenciais em qualquer aplicação web,
-            mas seus dados só serão úteis se estiverem corretos e completos.
-            Pensando nisso, este projeto foi desenvolvido para que o usuário
-            seja capaz de adicionar validações ao formulário, garantindo que os
-            dados informados estejam corretos e completos.
-          </p>
-          <a href="https://cerulean-empanada-254b4e.netlify.app">
-            <button>Ver projeto completo</button>
-          </a>
-        </div>
-      </div>
+  <!-- Footer -->
+  <footer id="footer">
+    <div id="socials">
+      <h3>Contato / Redes Sociais:</h3>
+      <a class="socials-icons" href="https://www.instagram.com/loopes__f/"><img src="./img/instagram.png" alt="" /></a>
+      <a class="socials-icons" href="https://www.linkedin.com/in/fabricio-lopes-365b43235/"><img
+          src="./img/linkedin.png" alt="" /></a>
+      <a class="socials-icons" href="https://github.com/LopesFabricio"><img src="./img/github.png" alt="" /></a>
+      <a class="socials-icons" href="https://wa.me/5599984560555"><img src="./img/whatsapp.png" alt="" /></a>
+      <a class="socials-icons" href="mailto:fabriciolopes18fl@gmail.com"><img src="./img/gmail.png" alt="" /></a>
     </div>
 
-    <!-- Skills -->
-    <div id="skills">
-      <h1>Minhas Skills</h1>
-      <hr />
-      <div class="skills-container">
-        <div class="card">
-          <div class="card-img">
-            <img src="./img/js.png" alt="" />
-          </div>
-          <h2>JavaScript</h2>
-          <p>
-            JavaScript é uma linguagem de programação de alto nível criada, a
-            princípio, para ser executada em navegadores e manipular
-            comportamentos de páginas web.
-          </p>
-        </div>
-        <div class="card">
-          <div class="card-img"><img src="./img/typescript.png" alt="" /></div>
-          <h2>TypeScript</h2>
-          <p>
-            TypeScript é um superconjunto de JavaScript, ou seja, um conjunto de
-            ferramentas e formas mais eficientes de escrever código JavaScript,
-            adicionando recursos que não estão presentes de maneira nativa na
-            linguagem.
-          </p>
-        </div>
-        <div class="card">
-          <div class="card-img">
-            <img src="./img/html-5.png" alt="" />
-          </div>
-          <h2>HTML 5</h2>
-          <p>
-            HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção
-            mais básico da web. Define o significado e a estrutura do conteúdo
-            da web.
-          </p>
-        </div>
-        <div class="card">
-          <div class="card-img">
-            <img src="./img/css-3 (1).png" alt="" />
-          </div>
-          <h2>CSS 3</h2>
-          <p>
-            CSS é chamado de linguagem Cascading Style Sheet e é usado para
-            estilizar elementos escritos em uma linguagem de marcação como HTML.
-          </p>
-        </div>
-        <div class="card">
-          <div class="card-img">
-            <img src="./img/atom (1).png" alt="" />
-          </div>
-          <h2>React</h2>
-          <p>
-            O React é a biblioteca mais popular do JavaScript e é usada para
-            construir uma interface de usuário (IU). Ela oferece uma resposta
-            excelente para o usuário adicionar comandos usando um novo método de
-            renderizar sites.
-          </p>
-        </div>
-        <div class="card">
-          <div class="card-img">
-            <img src="./img/bootstrap.png" alt="" />
-          </div>
-          <h2>Bootstrap</h2>
-          <p>
-            Bootstrap é um framework front-end que fornece estruturas de CSS
-            para a criação de sites e aplicações responsivas de forma rápida e
-            simples. Além disso, pode lidar com sites de desktop e páginas de
-            dispositivos móveis da mesma forma.
-          </p>
-        </div>
-      </div>
+    <div class="icons-atribute">
+      <a href="https://www.flaticon.com/free-icons/system" title="system icons">System icons created by Freepik -
+        Flaticon</a>
+      <a href="https://www.flaticon.com/free-icons/web-development" title="web development icons">Web development icons
+        created by surang - Flaticon</a>
+      <a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by
+        Freepik - Flaticon</a>
+      <a href="https://www.flaticon.com/free-icons/typescript" title="typescript icons">Typescript icons created by
+        Freepik - Flaticon</a>
+      <a href="https://www.flaticon.com/free-icons/logo" title="logo icons">Logo icons created by Freepik - Flaticon</a>
+      <a href="https://www.flaticon.com/free-icons/css" title="css icons">Css icons created by Pixel perfect -
+        Flaticon</a>
+      <a href="https://www.flaticon.com/free-icons/react" title="react icons">React icons created by srip - Flaticon</a>
+      <a href="https://www.flaticon.com/free-icons/bootstrap" title="bootstrap icons">Bootstrap icons created by Freepik
+        - Flaticon</a>
     </div>
+  </footer>
 
-    <!-- Footer -->
-    <footer id="footer">
-      <div id="socials">
-        <h3>Contato / Redes Sociais:</h3>
-        <a class="socials-icons" href="https://www.instagram.com/loopes__f/"
-          ><img src="./img/instagram.png" alt=""
-        /></a>
-        <a
-          class="socials-icons"
-          href="https://www.linkedin.com/in/fabricio-lopes-365b43235/"
-          ><img src="./img/linkedin.png" alt=""
-        /></a>
-        <a class="socials-icons" href="https://github.com/LopesFabricio"
-          ><img src="./img/github.png" alt=""
-        /></a>
-        <a class="socials-icons" href="https://wa.me/5599984560555"
-          ><img src="./img/whatsapp.png" alt=""
-        /></a>
-        <a class="socials-icons" href="mailto:fabriciolopes18fl@gmail.com"
-          ><img src="./img/gmail.png" alt=""
-        /></a>
-      </div>
+  <script src="./script.js"></script>
+</body>
 
-      <div class="icons-atribute">
-        <a
-          href="https://www.flaticon.com/free-icons/system"
-          title="system icons"
-          >System icons created by Freepik - Flaticon</a
-        >
-        <a
-          href="https://www.flaticon.com/free-icons/web-development"
-          title="web development icons"
-          >Web development icons created by surang - Flaticon</a
-        >
-        <a
-          href="https://www.flaticon.com/free-icons/javascript"
-          title="javascript icons"
-          >Javascript icons created by Freepik - Flaticon</a
-        >
-        <a
-          href="https://www.flaticon.com/free-icons/typescript"
-          title="typescript icons"
-          >Typescript icons created by Freepik - Flaticon</a
-        >
-        <a href="https://www.flaticon.com/free-icons/logo" title="logo icons"
-          >Logo icons created by Freepik - Flaticon</a
-        >
-        <a href="https://www.flaticon.com/free-icons/css" title="css icons"
-          >Css icons created by Pixel perfect - Flaticon</a
-        >
-        <a href="https://www.flaticon.com/free-icons/react" title="react icons"
-          >React icons created by srip - Flaticon</a
-        >
-        <a
-          href="https://www.flaticon.com/free-icons/bootstrap"
-          title="bootstrap icons"
-          >Bootstrap icons created by Freepik - Flaticon</a
-        >
-      </div>
-    </footer>
-
-    <script src="./script.js"></script>
-  </body>
 </html>
 
 <!-- links reverencia -->
